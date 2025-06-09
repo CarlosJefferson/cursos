@@ -19,3 +19,24 @@ Depois, rode os testes com:
 ```
 ./gradlew jvmTest
 ```
+
+## Executar o app Android
+
+Para instalar e rodar o aplicativo de exemplo no Android, siga os passos:
+
+1. Gere o wrapper do Gradle (caso ainda n\u00e3o tenha feito):
+
+```bash
+gradle wrapper
+```
+
+2. Conecte um dispositivo ou inicie um emulador.
+
+3. Na raiz do projeto, execute:
+
+```bash
+./gradlew :androidApp:installDebug
+```
+
+Esse comando compila o projeto da pasta `androidApp` e instala a vers\u00e3o de depura\u00e7\u00e3o no dispositivo ou emulador.
+
