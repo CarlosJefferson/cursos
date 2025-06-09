@@ -10,10 +10,6 @@ plugins {
     alias(libs.plugins.kotlin.multiplatform)
 }
 
-repositories {
-    // Use Maven Central for resolving dependencies.
-    mavenCentral()
-}
 
 kotlin {
     jvm()
@@ -21,6 +17,8 @@ kotlin {
         browser()
         nodejs()
     }
+
+    jvmToolchain(21)
 
     sourceSets {
         val commonMain by getting {
