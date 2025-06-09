@@ -30,6 +30,11 @@ Para instalar e rodar o aplicativo de exemplo no Android, siga os passos:
 gradle wrapper
 ```
 
+Se o comando `./gradlew` retornar o erro `Unable to access jarfile`,
+significa que o arquivo `gradle/wrapper/gradle-wrapper.jar` precisa ser
+gerado localmente. Nesse caso, execute novamente `gradle wrapper` antes
+de prosseguir.
+
 2. Conecte um dispositivo ou inicie um emulador.
 
 3. Na raiz do projeto, execute:
