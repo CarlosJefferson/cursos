@@ -4,8 +4,11 @@ import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertFailsWith
 
+import com.example.calc.data.CalculatorImpl
+import com.example.calc.domain.Calculator
+
 class CalculatorTest {
-    private val calc = Calculator()
+    private val calc: Calculator = CalculatorImpl()
 
     @Test
     fun testAdd() {

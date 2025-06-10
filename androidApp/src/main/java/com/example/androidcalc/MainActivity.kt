@@ -4,11 +4,12 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.calc.Calculator
+import com.example.calc.data.CalculatorImpl
+import com.example.calc.domain.Calculator
 
 class MainActivity : AppCompatActivity() {
     private lateinit var display: TextView
-    private val calc = Calculator()
+    private val calc: Calculator = CalculatorImpl()
     private var operand: Double? = null
     private var pendingOperation: ((Double, Double) -> Double)? = null
 
